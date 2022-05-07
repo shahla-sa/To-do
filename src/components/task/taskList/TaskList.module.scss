@@ -1,0 +1,60 @@
+.wrapper {
+  .taskbar {
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 5px 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0px;
+    width: calc(100% - 0px);
+    height: 40px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    div {
+      margin: 0 auto;
+      span {
+        width: 50%;
+        display: inline-block;
+        &:first-child {
+          text-align: right;
+        }
+        &:last-child {
+          text-align: left;
+        }
+      }
+    }
+    .btn {
+      border: 0;
+      outline: 0;
+      background-color: transparent;
+      color: rgb(78, 56, 20);
+      padding: 5px 5px;
+      cursor: pointer;
+    }
+    .btn.active {
+      font-weight: bold;
+    }
+    .clearBtn {
+      border-radius: 3px;
+      background-color: #ccc;
+      padding: 3px 10px;
+      border: 1px solid #c2c2c2;
+      font-size: 12px;
+      width: 110px;
+    }
+    .count {
+      width: 110px;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  .text {
+    padding: 40px;
+  }
+}
